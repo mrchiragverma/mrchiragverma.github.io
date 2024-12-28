@@ -6,49 +6,56 @@
     <title>Chirag Verma - Resume</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f7;
+            background-color: #f4f4f4;
             color: #333;
         }
 
         header {
+            background: #007aff;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 50px 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 2.5em;
+        header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
 
-        h2 {
-            font-size: 1.8em;
-            margin-top: 40px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        p {
+        header p {
             margin: 5px 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         section {
             margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007aff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         ul {
@@ -59,11 +66,21 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #007aff;
+            color: white;
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
@@ -72,16 +89,21 @@
         <h1>Chirag Verma</h1>
         <p>IT Professional</p>
         <p>Email: chiragverma1515@gmail.com | Phone: +91 972 962 1184</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/chiragverma1515" target="_blank">linkedin.com/in/chiragverma1515</a></p>
+        <nav>
+            <a href="#summary">Summary</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+        </nav>
     </header>
     
     <main>
-        <section class="summary">
+        <section id="summary">
             <h2>Profile Summary</h2>
             <p>Result-oriented professional with a proven record of conceiving & implementing ideas that create value for the organization; targeting assignments in Software Engineering with an organization of high repute, within IT sector, preferably in Gurugram.</p>
         </section>
 
-        <section class="experience">
+        <section id="experience">
             <h2>Experience</h2>
             <div class="job">
                 <h3>Sr. Software Engineer - CBRE</h3>
@@ -105,7 +127,7 @@
             </div>
             <div class="job">
                 <h3>Software Engineer - IRIS</h3>
-                <p><strong>Noida, Uttar Pradesh</ <p><strong>Noida, Uttar Pradesh</strong> | Nov’17 - Jul’18</p>
+                <p><strong>Noida, Uttar Pradesh</strong> | Nov’17 - Jul’18</p>
                 <ul>
                     <li>Worked on KPMG's Project Inquiry Xpress, a Global Compliance Review system for handling time or expense entry.</li>
                     <li>Designed Angular Formly new dynamic custom form-controls.</li>
@@ -123,22 +145,12 @@
             </div>
         </section>
 
-        <section class="education">
+        <section id="education">
             <h2>Education</h2>
             <p><strong>B.Tech. (IT)</strong> | Kurukshetra University, Kurukshetra | 2015</p>
         </section>
 
-        <section class="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Microsoft Certified: Azure Solutions Architect Expert, May’21</li>
-                <li>Microsoft Certified: Azure AI Engineer Associate, Oct’20</li>
-                <li>Microsoft Certified: DevOps Engineer Expert, Oct’20</li>
-                <li>Microsoft Certified: Azure Developer Associate, May’19</li>
-            </ul>
-        </section>
-
-        <section class="skills">
+        <section id="skills">
             <h2>IT Skills</h2>
             <ul>
                 <li>Framework: ASP.NET Core, ASP.NET MVC, ASP.NET Web Form, Web API</li>
