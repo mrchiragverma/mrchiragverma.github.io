@@ -14,8 +14,8 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000;
+            color: #fff;
             scroll-behavior: smooth;
             line-height: 1.6;
         }
@@ -27,18 +27,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(135deg, #007aff, #4a90e2);
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
             color: white;
             padding: 20px;
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 4em;
             margin-bottom: 10px;
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin: 10px 0;
         }
 
@@ -51,7 +51,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            font-size: 1em;
+            font-size: 1.2em;
             padding: 10px 15px;
             border: 2px solid white;
             border-radius: 5px;
@@ -60,24 +60,26 @@
 
         nav a:hover {
             background: white;
-            color: #007aff;
+            color: #000;
         }
 
         section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
         }
 
         section h2 {
             font-size: 2.5em;
-            color: #007aff;
+            color: #4a90e2;
             margin-bottom: 20px;
         }
 
         section p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
 
@@ -90,7 +92,7 @@
         }
 
         .skills ul li, .experience ul li {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin: 10px 0;
             display: flex;
             align-items: center;
@@ -98,13 +100,13 @@
 
         .skills ul li::before, .experience ul li::before {
             content: '\2022';
-            color: #007aff;
+            color: #4a90e2;
             font-size: 1.5em;
             margin-right: 10px;
         }
 
         footer {
-            background-color: #007aff;
+            background-color: #4a90e2;
             color: white;
             padding: 20px;
             text-align: center;
@@ -116,16 +118,30 @@
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5em;
+                font-size: 3em;
             }
 
             nav a {
                 margin: 0 10px;
-                font-size: 0.9em;
+                font-size: 1em;
             }
 
             section h2 {
                 font-size: 2em;
+            }
+        }
+
+        /* Smooth fade-in animation */
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
