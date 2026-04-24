@@ -168,10 +168,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .floating-orbs {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 
