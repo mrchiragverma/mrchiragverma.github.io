@@ -438,8 +438,28 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     padding: 20px 0;
     position: relative;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.02);
+}
+
+.bytemonk-diagram svg {
+    min-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bytemonk-diagram::-webkit-scrollbar {
+    height: 6px;
+}
+.bytemonk-diagram::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 0 20px;
+}
+.bytemonk-diagram::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
 }
 
 .bm-track {
