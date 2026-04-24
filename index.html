@@ -3,207 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirag Verma - Portfolio</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-            scroll-behavior: smooth;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-            color: white;
-            padding: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        header h1 {
-            font-size: 4.5em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding: 10px 15px;
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background: white;
-            color: #000;
-        }
-
-        section {
-            padding: 100px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            position: relative;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #4a90e2;
-            margin-bottom: 20px;
-        }
-
-        section p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .skills ul, .experience ul {
-            text-align: left;
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-
-        .skills ul li, .experience ul li {
-            font-size: 1.2em;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .skills ul li::before, .experience ul li::before {
-            content: '\2022';
-            color: #4a90e2;
-            font-size: 1.5em;
-            margin-right: 10px;
-        }
-
-        footer {
-            background-color: #4a90e2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 10px 0;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3em;
-            }
-
-            nav a {
-                margin: 0 10px;
-                font-size: 1em;
-            }
-
-            section h2 {
-                font-size: 2em;
-            }
-        }
-
-        /* Smooth animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>Chirag Verma | Lead Engineer</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/apple.css">
 </head>
 <body>
-    <header>
-        <h1>Chirag Verma</h1>
-        <p>IT Professional | Software Engineer</p>
-        <p>Email: chiragverma1515@gmail.com | Phone: +91 972 962 1184</p>
-        <nav>
-            <a href="#summary">Summary</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="summary">
-        <h2>Profile Summary</h2>
-        <p>Result-oriented professional with expertise in software engineering and cloud technologies. Delivering impactful solutions that exceed client expectations.</p>
-    </section>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">CV.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#system-design">Architecture</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Sr. Software Engineer - CBRE</strong> | Nov’19 - Present</li>
-            <li><strong>Software Engineer - Nagarro</strong> | Jul’18 - Nov’19</li>
-            <li><strong>Software Engineer - IRIS</strong> | Nov’17 - Jul’18</li>
-            <li><strong>Software Engineer - VServ Business Solutions</strong> | Jul’15 - Nov’17</li>
-        </ul>
-    </section>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Chirag Verma.</h1>
+                <p class="hero-subtitle">Lead Engineer architecting scalable distributed systems.</p>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>IT Skills</h2>
-        <ul>
-            <li>Frameworks: ASP.NET Core, React, Angular</li>
-            <li>Cloud: Azure Services, Azure DevOps</li>
-            <li>Languages: C#, JavaScript</li>
-            <li>Tools: Git, Jira, Postman</li>
-        </ul>
-    </section>
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title gsap-reveal">About Me</h2>
+                <p class="about-text gsap-reveal">
+                    I am a <strong>Lead Engineer with 10.5+ years of experience</strong> architecting scalable distributed systems using <strong>.NET, Azure, Node.js, React, and Kubernetes</strong>. I specialize in end-to-end product development, translating ambiguous requirements into production-ready containerized microservices. 
+                    <br><br>
+                    As an SME in cloud-native architecture, I work extensively with SQL/NoSQL databases, Docker orchestration, and Gen AI integration, with a proven track record of building maintainable systems while mentoring teams on scalability best practices.
+                </p>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Address: 33/12 GTB Colony, Kaithal, Haryana, 136027</p>
-        <p>Email: chiragverma1515@gmail.com</p>
-        <p>Phone: +91 972 962 1184</p>
-    </section>
+        <section id="experience" class="section">
+            <div class="section-container">
+                <h2 class="section-title gsap-reveal">Professional Experience</h2>
+                
+                <div class="timeline">
+                    <!-- NAB -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2023 – Present</div>
+                        <div class="timeline-content">
+                            <h3>Lead Engineer (AVP)</h3>
+                            <h4>NAB (National Australia Bank) - Gurugram, India</h4>
+                            <ul>
+                                <li>Own end-to-end product lifecycle as IC and SME, implementing Node.js/React microservices on K8s.</li>
+                                <li>Architect containerized solutions using Docker and K8s with NABX/NABServ frameworks, deploying via Harness CI/CD.</li>
+                                <li>Pioneered Gen AI integration through POC for document summarization reducing manual review time by 70%.</li>
+                                <li>Design scalable event-driven systems with SQL/NoSQL supporting high-throughput transactions with 99.9% uptime SLA.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CBRE -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nov 2019 – Jun 2023</div>
+                        <div class="timeline-content">
+                            <h3>Senior Software Engineer</h3>
+                            <h4>CBRE - Gurugram, India</h4>
+                            <ul>
+                                <li>Led ”Harbour” development using .NET Core and Azure cloud services (App Services, Functions, Cosmos DB, Service Bus).</li>
+                                <li>Architected microservices with Azure SQL and Cosmos DB, improving scalability by 40% and reducing costs by 30%.</li>
+                                <li>Implemented Docker containerization and Azure DevOps CI/CD pipelines.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Nagarro -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2018 – Nov 2019</div>
+                        <div class="timeline-content">
+                            <h3>Senior Associate Technology</h3>
+                            <h4>Nagarro - Gurugram, India</h4>
+                            <ul>
+                                <li>Developed ”Wealth Management Solution” for Nedbank using .NET Core, ASP.NET MVC, and SQL Server.</li>
+                                <li>Implemented agile methodologies with Azure DevOps, reducing development cycle time by 25%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- IRIS -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nov 2017 – Jul 2018</div>
+                        <div class="timeline-content">
+                            <h3>Systems Engineer</h3>
+                            <h4>IRIS - Noida, India</h4>
+                            <ul>
+                                <li>Built ”Inquiry Xpress” compliance system for KPMG using Angular, .NET Web API, and SQL Server.</li>
+                                <li>Designed custom Angular dynamic form controls reducing development time by 60%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- VServ -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2015 – Nov 2017</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <h4>VServ Business Solutions - Mohali, India</h4>
+                            <ul>
+                                <li>Refactored legacy .NET applications to modern .NET Core standards with SQL Server optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="system-design" class="section">
+            <div class="section-container">
+                <h2 class="section-title gsap-reveal">System Design Architectures</h2>
+                <p class="about-text gsap-reveal" style="margin-bottom: 40px; font-size: 1.1rem;">
+                    High-level system designs demonstrating my ability to architect scalable, enterprise-grade applications using modern cloud-native patterns.
+                </p>
+                
+                <h3 class="gsap-reveal" style="text-align:center; font-size: 1.8rem; margin-bottom: 20px; font-weight: 600;">Gen AI Orchestration Architecture</h3>
+                <div class="bytemonk-diagram gsap-reveal">
+                    <svg viewBox="0 0 1260 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <!-- Client to Gateway -->
+                        <path d="M 210 190 L 370 190" class="bm-track" />
+                        <path d="M 210 190 L 370 190" class="bm-flow-req" />
+                        
+                        <path d="M 370 210 L 210 210" class="bm-track" />
+                        <path d="M 370 210 L 210 210" class="bm-flow-res" />
+                        <text x="290" y="175" class="bm-text">User Query</text>
+
+                        <!-- Gateway to Orchestrator -->
+                        <path d="M 550 190 L 710 190" class="bm-track" />
+                        <path d="M 550 190 L 710 190" class="bm-flow-req" />
+                        
+                        <path d="M 710 210 L 550 210" class="bm-track" />
+                        <path d="M 710 210 L 550 210" class="bm-flow-res" />
+                        <text x="630" y="175" class="bm-text">API Call</text>
+
+                        <!-- Orchestrator to OpenAI -->
+                        <path d="M 890 180 C 970 180, 970 90, 1050 90" class="bm-track" />
+                        <path d="M 890 180 C 970 180, 970 90, 1050 90" class="bm-flow-req" />
+                        
+                        <path d="M 1050 110 C 970 110, 970 195, 890 195" class="bm-track" />
+                        <path d="M 1050 110 C 970 110, 970 195, 890 195" class="bm-flow-res" />
+                        <text x="970" y="110" class="bm-text">LLM Inference</text>
+
+                        <!-- Orchestrator to DB -->
+                        <path d="M 890 210 C 970 210, 970 290, 1050 290" class="bm-track" />
+                        <path d="M 890 210 C 970 210, 970 290, 1050 290" class="bm-flow-req" />
+                        
+                        <path d="M 1050 310 C 970 310, 970 225, 890 225" class="bm-track" />
+                        <path d="M 1050 310 C 970 310, 970 225, 890 225" class="bm-flow-res" />
+                        <text x="970" y="295" class="bm-text">Semantic Search</text>
+
+                        <!-- Nodes -->
+                        <foreignObject x="20" y="160" width="200" height="80">
+                            <div class="bm-node">
+                                <div class="bm-icon">📱</div>
+                                <span>Client App</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="360" y="160" width="200" height="80">
+                            <div class="bm-node">
+                                <div class="bm-icon">🛡️</div>
+                                <span>API Gateway</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="700" y="160" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(168, 85, 247, 0.4); box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.1);">
+                                <div class="bm-icon">⚙️</div>
+                                <span>AI Orchestrator</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="1040" y="50" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(16, 185, 129, 0.4); box-shadow: inset 0 0 15px rgba(16, 185, 129, 0.1);">
+                                <div class="bm-icon">🧠</div>
+                                <span>Azure OpenAI</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="1040" y="270" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: inset 0 0 15px rgba(245, 158, 11, 0.1);">
+                                <div class="bm-icon">🗄️</div>
+                                <span>Vector DB</span>
+                            </div>
+                        </foreignObject>
+                    </svg>
+                </div>
+
+                <h3 class="gsap-reveal" style="text-align:center; font-size: 1.8rem; margin-top: 60px; margin-bottom: 20px; font-weight: 600;">Scalable Ticket Booking Architecture</h3>
+                <div class="bytemonk-diagram gsap-reveal">
+                    <svg viewBox="0 0 1260 450" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <!-- Client to LB -->
+                        <path d="M 210 215 L 370 215" class="bm-track" />
+                        <path d="M 210 215 L 370 215" class="bm-flow-req" />
+                        
+                        <path d="M 370 235 L 210 235" class="bm-track" />
+                        <path d="M 370 235 L 210 235" class="bm-flow-res" />
+
+                        <!-- LB to Booking Service -->
+                        <path d="M 550 215 L 710 215" class="bm-track" />
+                        <path d="M 550 215 L 710 215" class="bm-flow-req" />
+                        
+                        <path d="M 710 235 L 550 235" class="bm-track" />
+                        <path d="M 710 235 L 550 235" class="bm-flow-res" />
+                        <text x="630" y="200" class="bm-text">Process Request</text>
+
+                        <!-- Booking to Cache -->
+                        <path d="M 890 195 C 970 195, 970 90, 1050 90" class="bm-track" />
+                        <path d="M 890 195 C 970 195, 970 90, 1050 90" class="bm-flow-req" />
+                        
+                        <path d="M 1050 110 C 970 110, 970 205, 890 205" class="bm-track" />
+                        <path d="M 1050 110 C 970 110, 970 205, 890 205" class="bm-flow-res" />
+                        <text x="970" y="120" class="bm-text">Distributed Lock</text>
+
+                        <!-- Booking to Payment -->
+                        <path d="M 890 225 L 1050 225" class="bm-track" />
+                        <path d="M 890 225 L 1050 225" class="bm-flow-req" />
+                        
+                        <path d="M 1050 235 L 890 235" class="bm-track" />
+                        <path d="M 1050 235 L 890 235" class="bm-flow-res" />
+                        <text x="970" y="210" class="bm-text">Process Payment</text>
+
+                        <!-- Booking to DB -->
+                        <path d="M 890 250 C 970 250, 970 340, 1050 340" class="bm-track" />
+                        <path d="M 890 250 C 970 250, 970 340, 1050 340" class="bm-flow-req" />
+                        
+                        <path d="M 1050 360 C 970 360, 970 260, 890 260" class="bm-track" />
+                        <path d="M 1050 360 C 970 360, 970 260, 890 260" class="bm-flow-res" />
+                        <text x="970" y="330" class="bm-text">Commit Txn</text>
+
+                        <!-- Nodes -->
+                        <foreignObject x="20" y="185" width="200" height="80">
+                            <div class="bm-node">
+                                <div class="bm-icon">🧑‍💻</div>
+                                <span>User App</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="360" y="185" width="200" height="80">
+                            <div class="bm-node">
+                                <div class="bm-icon">⚖️</div>
+                                <span>Load Balancer</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="700" y="185" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(239, 68, 68, 0.4); box-shadow: inset 0 0 15px rgba(239, 68, 68, 0.1);">
+                                <div class="bm-icon">🎟️</div>
+                                <span>Booking Service</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="1040" y="50" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(234, 179, 8, 0.4); box-shadow: inset 0 0 15px rgba(234, 179, 8, 0.1);">
+                                <div class="bm-icon">⚡</div>
+                                <span>Redis Cache</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="1040" y="185" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(16, 185, 129, 0.4); box-shadow: inset 0 0 15px rgba(16, 185, 129, 0.1);">
+                                <div class="bm-icon">💳</div>
+                                <span>Payment Service</span>
+                            </div>
+                        </foreignObject>
+
+                        <foreignObject x="1040" y="300" width="200" height="80">
+                            <div class="bm-node" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: inset 0 0 15px rgba(59, 130, 246, 0.1);">
+                                <div class="bm-icon">🗄️</div>
+                                <span>SQL Database</span>
+                            </div>
+                        </foreignObject>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-container">
+                <h2 class="section-title gsap-reveal">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">💻</div>
+                        <h3>Languages</h3>
+                        <p>C#, JavaScript, Node.js, SQL</p>
+                    </div>
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">⚡</div>
+                        <h3>Frameworks</h3>
+                        <p>ASP.NET Core, Web API, React, Redux, Angular, Express.js</p>
+                    </div>
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Azure, Kubernetes, Docker, Harness CI/CD</p>
+                    </div>
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">🏗️</div>
+                        <h3>Architecture</h3>
+                        <p>Microservices, Event-Driven Systems, Distributed Systems, API Design</p>
+                    </div>
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools</h3>
+                        <p>GitHub, Azure DevOps, Cosmos DB, ServiceNow, Gen AI/LLMs</p>
+                    </div>
+                    <div class="skill-card gsap-reveal">
+                        <div class="skill-icon">🎓</div>
+                        <h3>Certifications</h3>
+                        <p>Azure Solutions Architect Expert, DevOps Engineer Expert, AI Engineer Associate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-container contact-container">
+                <h2 class="section-title gsap-reveal">Get in Touch</h2>
+                <div class="contact-card gsap-reveal">
+                    <div class="contact-info-item">
+                        <a href="mailto:chiragverma1515@gmail.com">chiragverma1515@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="tel:+919729621184">+91 972 962 1184</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="https://linkedin.com/in/chiragverma1515" target="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Chirag Verma</p>
+        <p>&copy; 2026 Chirag Verma. All Rights Reserved.</p>
     </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/apple.js"></script>
 </body>
 </html>
